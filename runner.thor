@@ -8,7 +8,7 @@ class Runner < Thor
 
     browser.goto "https://www.google.com/"
 
-    logo_div = browser.div(id: "hplogo")
+    logo_div = browser.div(id: "lga")
     logo_div.wait_until_present
 
     image = logo_div.img
